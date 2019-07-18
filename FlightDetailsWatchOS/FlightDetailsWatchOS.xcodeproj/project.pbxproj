@@ -19,6 +19,8 @@
 		B6D69C8B22E004F300C14C54 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D69C8A22E004F300C14C54 /* InterfaceController.swift */; };
 		B6D69C8D22E004F300C14C54 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D69C8C22E004F300C14C54 /* ExtensionDelegate.swift */; };
 		B6D69C8F22E004F300C14C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D69C8E22E004F300C14C54 /* Assets.xcassets */; };
+		B6D69CC922E01C3200C14C54 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = B6D69CC722E01C3200C14C54 /* Flights.json */; };
+		B6D69CCA22E01C3200C14C54 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D69CC822E01C3200C14C54 /* Flight.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		B6D69C8C22E004F300C14C54 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		B6D69C8E22E004F300C14C54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6D69C9022E004F300C14C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D69CC722E01C3200C14C54 /* Flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Flights.json; sourceTree = "<group>"; };
+		B6D69CC822E01C3200C14C54 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		B6D69C5B22E004EF00C14C54 = {
 			isa = PBXGroup;
 			children = (
+				B6D69CC622E01C3200C14C54 /* Shared */,
 				B6D69C6622E004EF00C14C54 /* FlightDetailsWatchOS */,
 				B6D69C7A22E004F200C14C54 /* FlightDetailsWatchOS WatchKit App */,
 				B6D69C8922E004F300C14C54 /* FlightDetailsWatchOS WatchKit Extension */,
@@ -152,6 +157,15 @@
 				B6D69C9022E004F300C14C54 /* Info.plist */,
 			);
 			path = "FlightDetailsWatchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B6D69CC622E01C3200C14C54 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B6D69CC722E01C3200C14C54 /* Flights.json */,
+				B6D69CC822E01C3200C14C54 /* Flight.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D69C8F22E004F300C14C54 /* Assets.xcassets in Resources */,
+				B6D69CC922E01C3200C14C54 /* Flights.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D69CCA22E01C3200C14C54 /* Flight.swift in Sources */,
 				B6D69C8D22E004F300C14C54 /* ExtensionDelegate.swift in Sources */,
 				B6D69C8B22E004F300C14C54 /* InterfaceController.swift in Sources */,
 			);

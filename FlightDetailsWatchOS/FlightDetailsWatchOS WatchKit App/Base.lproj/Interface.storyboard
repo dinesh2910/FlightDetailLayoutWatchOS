@@ -1,14 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Flight-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="Flight" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FlightDetailsWatchOS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="AMc-Yd-C0J">
+                            <items>
+                                <imageView width="40" height="40" alignment="left" image="flightImage" contentMode="scaleAspectFit" id="6qt-By-AzU">
+                                    <color key="tintColor" red="0.3411764706" green="0.1529411765" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <group alignment="left" layout="vertical" spacing="0.0" id="xpp-QD-zjA">
+                                    <items>
+                                        <label alignment="left" text="Flight 777" textAlignment="center" id="ehN-gC-vjQ">
+                                            <color key="textColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        </label>
+                                        <label alignment="left" text="BNA to JFK" textAlignment="center" id="8UZ-eu-kjI">
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                        </label>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="6" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="0.0" id="A2n-Ua-LHN">
+                            <items>
+                                <label alignment="left" text="AI 777 Boards" id="oh0-n8-DtR">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                </label>
+                                <label width="122" height="44" alignment="left" text="20:35" id="tqw-8b-rdc">
+                                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" type="system" weight="medium" pointSize="45"/>
+                                </label>
+                                <label alignment="left" text="on time" id="Fy5-R0-Voc">
+                                    <color key="textColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </label>
+                            </items>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="ipx-E6-SqF">
+                            <items>
+                                <label alignment="left" text="Gate 2B" id="LYF-Xa-yRH">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                                <label alignment="right" text="Seat 14B" id="6Cw-aK-5z2">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="boardingLabel" destination="oh0-n8-DtR" id="ZV5-Jz-QDX"/>
+                        <outlet property="flightLogoImage" destination="6qt-By-AzU" id="4A2-Gs-CBK"/>
+                        <outlet property="flightNameLabel" destination="ehN-gC-vjQ" id="VoK-9s-Xyg"/>
+                        <outlet property="flightStatusLabel" destination="Fy5-R0-Voc" id="Yo1-Nv-3AX"/>
+                        <outlet property="gateLabel" destination="LYF-Xa-yRH" id="eOf-Zz-6Cm"/>
+                        <outlet property="routeLabel" destination="8UZ-eu-kjI" id="v5M-Yv-H77"/>
+                        <outlet property="seatLabel" destination="6Cw-aK-5z2" id="XJp-mP-rB8"/>
+                        <outlet property="timeLabel" destination="tqw-8b-rdc" id="jig-xj-DdM"/>
+                    </connections>
+                </controller>
             </objects>
         </scene>
     </scenes>
