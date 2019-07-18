@@ -16,7 +16,7 @@
                     <items>
                         <group width="1" alignment="left" id="AMc-Yd-C0J">
                             <items>
-                                <imageView width="40" height="40" alignment="left" image="flightImage" contentMode="scaleAspectFit" id="6qt-By-AzU">
+                                <imageView width="39" height="28" alignment="left" image="flightImage" contentMode="scaleAspectFit" id="6qt-By-AzU">
                                     <color key="tintColor" red="0.3411764706" green="0.1529411765" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </imageView>
                                 <group alignment="left" layout="vertical" spacing="0.0" id="xpp-QD-zjA">
@@ -76,5 +76,62 @@
                 </controller>
             </objects>
         </scene>
+        <!--Air India-->
+        <scene sceneID="zhK-ee-yv9">
+            <objects>
+                <controller identifier="Schedule" title="Air India" id="fY7-Ds-tQu" customClass="ScheduleInterfaceController" customModule="FlightDetailsWatchOS_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="9ae-az-4VE">
+                            <items>
+                                <tableRow identifier="FlightsDisplayRow" id="96X-Df-e3o">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" spacing="6" id="5Eh-ht-FJc">
+                                        <items>
+                                            <separator height="1" heightAdjustment="-4" alignment="left" verticalAlignment="center" id="oo9-Zs-B1u">
+                                                <color key="color" red="0.3411764706" green="0.1529411765" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </separator>
+                                            <group alignment="left" layout="vertical" spacing="0.0" id="nWm-r3-kJh">
+                                                <items>
+                                                    <group width="1" alignment="left" verticalAlignment="bottom" id="mnL-sS-iMM">
+                                                        <items>
+                                                            <label alignment="left" text="AI 123" id="7RR-rr-ag4">
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                            </label>
+                                                            <label alignment="right" text="On time" id="Mb2-jJ-8iq">
+                                                                <color key="textColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                    <group width="1" height="32" alignment="left" spacing="4" id="04m-Lo-4Ix">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="center" text="BNA" textAlignment="left" id="KcK-ad-ct0">
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                                                            </label>
+                                                            <imageView width="30" height="15" alignment="center" verticalAlignment="center" image="Flight2" id="FyA-7d-tsG">
+                                                                <color key="tintColor" red="0.3411764706" green="0.1529411765" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </imageView>
+                                                            <label alignment="right" verticalAlignment="center" text="JFK" textAlignment="left" id="yMl-iT-4l8">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                                                            </label>
+                                                        </items>
+                                                    </group>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="flightsListingTable" destination="9ae-az-4VE" id="5gT-ri-Tkq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="54"/>
+        </scene>
     </scenes>
+    <color key="tintColor" red="0.3411764706" green="0.1529411765" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

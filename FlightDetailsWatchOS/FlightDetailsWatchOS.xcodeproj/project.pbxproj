@@ -21,6 +21,9 @@
 		B6D69C8F22E004F300C14C54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D69C8E22E004F300C14C54 /* Assets.xcassets */; };
 		B6D69CC922E01C3200C14C54 /* Flights.json in Resources */ = {isa = PBXBuildFile; fileRef = B6D69CC722E01C3200C14C54 /* Flights.json */; };
 		B6D69CCA22E01C3200C14C54 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D69CC822E01C3200C14C54 /* Flight.swift */; };
+		B6D69CCC22E01F6C00C14C54 /* Flight2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6D69CCB22E01F6C00C14C54 /* Flight2.jpg */; };
+		B6D69CD122E021A000C14C54 /* ScheduleInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D69CD022E021A000C14C54 /* ScheduleInterfaceController.swift */; };
+		B6D69CD222E0243C00C14C54 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D69C7B22E004F200C14C54 /* Interface.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,8 @@
 		B6D69C9022E004F300C14C54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D69CC722E01C3200C14C54 /* Flights.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Flights.json; sourceTree = "<group>"; };
 		B6D69CC822E01C3200C14C54 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		B6D69CCB22E01F6C00C14C54 /* Flight2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Flight2.jpg; path = ../../../../../Desktop/Flight2.jpg; sourceTree = "<group>"; };
+		B6D69CD022E021A000C14C54 /* ScheduleInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +137,7 @@
 				B6D69C6922E004EF00C14C54 /* ViewController.swift */,
 				B6D69C6B22E004EF00C14C54 /* Main.storyboard */,
 				B6D69C6E22E004F100C14C54 /* Assets.xcassets */,
+				B6D69CCB22E01F6C00C14C54 /* Flight2.jpg */,
 				B6D69C7022E004F100C14C54 /* LaunchScreen.storyboard */,
 				B6D69C7322E004F100C14C54 /* Info.plist */,
 			);
@@ -153,6 +159,7 @@
 			children = (
 				B6D69C8A22E004F300C14C54 /* InterfaceController.swift */,
 				B6D69C8C22E004F300C14C54 /* ExtensionDelegate.swift */,
+				B6D69CD022E021A000C14C54 /* ScheduleInterfaceController.swift */,
 				B6D69C8E22E004F300C14C54 /* Assets.xcassets */,
 				B6D69C9022E004F300C14C54 /* Info.plist */,
 			);
@@ -272,6 +279,7 @@
 			files = (
 				B6D69C7222E004F100C14C54 /* LaunchScreen.storyboard in Resources */,
 				B6D69C6F22E004F100C14C54 /* Assets.xcassets in Resources */,
+				B6D69CCC22E01F6C00C14C54 /* Flight2.jpg in Resources */,
 				B6D69C6D22E004EF00C14C54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D69C8F22E004F300C14C54 /* Assets.xcassets in Resources */,
+				B6D69CD222E0243C00C14C54 /* Interface.storyboard in Resources */,
 				B6D69CC922E01C3200C14C54 /* Flights.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,6 +321,7 @@
 			files = (
 				B6D69CCA22E01C3200C14C54 /* Flight.swift in Sources */,
 				B6D69C8D22E004F300C14C54 /* ExtensionDelegate.swift in Sources */,
+				B6D69CD122E021A000C14C54 /* ScheduleInterfaceController.swift in Sources */,
 				B6D69C8B22E004F300C14C54 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
